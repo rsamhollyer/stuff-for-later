@@ -1,0 +1,11 @@
+${head}
+<html lang="en">
+	<body class="container">
+		<ul class="list-group">
+			${wins.map((w) => `
+			<li class="list-group-item">${w.title} : ${w.category}</li>
+			`).join("")}
+		</ul>
+	</body>
+</html>
+${foot}
